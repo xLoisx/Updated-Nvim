@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 api = vim.api
 telescope = require('telescope')
 
@@ -62,3 +63,11 @@ api.nvim_set_keymap('n', '<leader>snip', ':Telescope luasnip <cr>', { noremap = 
 
 -- Misc
 api.nvim_set_keymap('n', '<leader>fr', ':Telescope resume <cr>', { noremap = true })
+=======
+local builtin = require('telescope.builtin')
+
+vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+>>>>>>> bed5f47c09f69544ef285c1b20c7eec6bb89b258
